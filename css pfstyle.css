@@ -1,0 +1,226 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#faf5f1;
+}
+
+.container {
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    background-color: #faf5f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #f5c6ac;
+    padding: 20px 0;
+    text-align: center; /* Center the content */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    align-items: center;
+    width: 100%;
+}
+
+.nav-left h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold; /* Semibold */
+    text-transform: lowercase; /* Transform text to lowercase */
+    letter-spacing: 1px; /* Adjust letter spacing */
+    color: #faf5f1;
+}
+
+.nav-right {
+    margin-left: auto; /* Push icons to the right */
+}
+
+.nav-right a {
+    margin-left: 20px;
+}
+
+.nav-right a img {
+    width: 30px;
+    height: 30px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px; /* Adjusted padding */
+	padding-bottom: 50;
+    width: 80%; /* Width adjustment */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.intro {
+    max-width: 50%;
+    text-align: left; /* Align text to the left */
+    margin-left: 15%; /* Adjusted margin to move closer to the image */
+}
+
+.intro h2 {
+    color:#5a8374;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color:#56534e; 
+	font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.profile-pic {
+    position: relative;
+    width: 300px;
+    height: 330px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 6px solid #abc7b1;
+}
+
+.profile-info {
+    position: absolute;
+    background-color:#abc7b1;
+    color:#5a8374;
+    padding: 10px 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 14px; /* Adjusted font size */
+    font-weight: 600; /* Semibold */
+}
+
+.top-left {
+    top: -15px;
+    left: -15px;
+}
+
+.bottom-right {
+    bottom: -15px;
+    right: -15px;
+}
+
+.hobbies {
+    background-color:#faf5f1;
+    color:#5a8374;
+    padding: 50px;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center the text */
+}
+
+.hobbies h2 {
+    font-size: 24px; /* Adjusted font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies li {
+    font-size: 18px;
+    font-weight: 300; /* Light */
+    margin-bottom: 10px;
+}
+
+.hobbies .star {
+    color: #d6a026;
+    margin-right: 10px;
+}
+
+.hobbies .year {
+    color: #56534e;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.hobbies-buttons {
+    margin-top: 20px; /* Adjusted margin-top */
+}
+
+.hobbies-buttons .button {
+    display: inline-block;
+    background-color: #d6a026; /* Green background color */
+    color: #ffffff; /* White text color */
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-right: 15px; /* Adjusted margin-right */
+}
+
+.hobbies-buttons .button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+.hobbies-buttons .button:hover {
+    background-color:#f5c6ac;
+}
+
+.editsprojects {
+    background-color: #f7e5d7;
+    padding: 20px 150px; /* Adjusted padding */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.projects-header {
+    text-align: center; /* Center the header */
+    margin-bottom: 20px;
+}
+
+.projects-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color:#d6a026;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 40px; /* Adjusted gap between projects */
+}
+
+.project-item {
+    background-color:#faf5f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-thumbnail iframe {
+    width: 100%;
+    height: 315px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.project-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color:#5a8374;
+}

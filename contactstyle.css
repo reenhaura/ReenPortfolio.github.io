@@ -1,0 +1,72 @@
+body {
+    background-color: #faf5f1;
+    font-family: 'Poppins', sans-serif;
+    color: #56534e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    color: #5a8374;
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    background-color: #f7e5d7;
+    padding: 40px; /* Increased padding for larger box */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set a fixed width for the contact box */
+}
+
+.contact-item {
+    margin: 20px 0; /* Increased margin for more spacing */
+}
+
+.contact-item h2 {
+    font-weight: 600;
+    color: #5a8374;
+    margin-bottom: 10px; /* Increased bottom margin for spacing */
+}
+
+.contact-item p {
+    font-weight: 400;
+    color: #56534e;
+    margin: 0;
+}
+
+.contact-item a {
+    color: #56534e;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #5a8374;
+}
+
+.home-link {
+    margin-top: 20px;
+}
+
+.back-home {
+    padding: 15px 20px; /* Increased padding for more space */
+    background-color: #d6a026; /* Yellow background color */
+    color: #faf5f1;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block; /* Ensure button takes up only necessary width */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.back-home:hover {
+    background-color: #f5c6ac;
+}

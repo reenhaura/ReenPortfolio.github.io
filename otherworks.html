@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReenHaura's Portfolio</title>
+    <link rel="stylesheet" href="../css portfolio/worksstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav style="font-family: 'Mansalva', cursive;">
+                <div class="nav-left">
+                    <h1 style="color:#faf5f1;">&nbsp; &nbsp;h a u r a&nbsp; &nbsp;y u s r e e n ' s&nbsp; &nbsp; p o r t f o l i o&nbsp; &nbsp;</h1>
+                </div>
+                <div class="nav-right">
+                    <a href="https://instagram.com/reenhaura" target="_blank">
+                        <img src="http://pluspng.com/img-png/instagram-icon-png-instagram-icon-1600.png" alt="Instagram" style="width: 30px; height: 30px; filter: invert(100%);">
+                    </a>
+                    <a href="https://tiktok.com/@filmnextdoor" target="_blank">
+                        <img src="https://www.svgrepo.com/show/333611/tiktok.svg" alt="TikTok" style="width: 30px; height: 30px; filter: invert(100%);">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="intro">
+                <h1>More of My Work</h1>
+                <p>Apart from creating video edits with Adobe After Effects</p>
+                <p>&nbsp;I am skilled in using Adobe Photoshop and Adobe Illustrator, and I also enjoy making art.</p>
+            </section>
+
+            <section class="projects white-bg">
+                <h2>Designs</h2>
+                <div class="project-grid designs">
+                    <div class="project-item"><img src="../PS1.png" alt="Design 1"></div>
+                    <div class="project-item"><img src="../PS2.png" alt="Design 2"></div>
+                    <div class="project-item"><img src="../LivRo.png" alt="Design 3"></div>
+                    <div class="project-item"><img src="../gameincdesign.jpg" alt="Design 4"></div>
+                </div>
+            </section>
+
+            <section class="projects peach-bg">
+                <h2>Artworks</h2>
+                <div class="carousel">
+                    <button class="prev" onclick="prevSlide()">❮</button>
+                    <div class="carousel-inner">
+                        <div class="carousel-item"><img src="../FREMINETdigiart.jpg" alt="Artwork 1"></div>
+                        <div class="carousel-item"><img src="../SHUCAdigiart.jpg" alt="Artwork 2"></div>
+                        <div class="carousel-item"><img src="../OWLDOODLE.jpg" alt="Artwork 3"></div>
+                        <div class="carousel-item"><img src="../MAKIBPsketch.jpg" alt="Artwork 4"></div>
+                        <div class="carousel-item"><img src="../EYESKETCH.jpg" alt="Artwork 5"></div>
+                        <div class="carousel-item"><img src="../ALBEDOsketches.jpg" alt="Artwork 6"></div>
+                    </div>
+                    <button class="next" onclick="nextSlide()">❯</button>
+                </div>
+            </section>
+
+            <section class="home-link">
+                <a href="index.html" class="back-home"><strong>HOME</strong></a>
+				 <a href="contact.html" class="back-home"><strong>CONTACT ME</strong></a>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
